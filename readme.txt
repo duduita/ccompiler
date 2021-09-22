@@ -1,7 +1,6 @@
-No prompt:
+Compile with:
+`flex tiny.l && gcc -c *.c && gcc -o tiny *.o -lfl`
+NOTE: On macOS may work with `-ll` instead of `-lfl`
 
-flex tiny.l && gcc -c *.c && gcc -o tiny *.o -lfl
-
-(Em Mac pode ser que funcione com -ll no lugar de -lfl)
-
-Execut�vel gerado � tiny
+Execute the lexical analyser with:
+`./tiny fat.c`
