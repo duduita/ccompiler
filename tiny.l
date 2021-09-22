@@ -48,12 +48,17 @@ whitespace  [ \t]+
 {identifier}    {return ID;}
 {newline}       {lineno++;}
 {whitespace}    {/* skip whitespace */}
-"$"             { char c;
+"/*"             { char c;
+                  int star = 0;
+                  int finish = 0;
                   do
                   { c = input();
                     if (c == EOF) break;
                     if (c == '\n') lineno++;
-                  } while (c != '$');
+                    if (c == '*') star = 1;
+                    if (c == '/' && star) finish = 1;
+                    if (c != '*') star = 0;
+                  } while (!finish);
                 }
 .               {return ERROR;}
 %%
