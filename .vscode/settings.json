@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "fstream": "c",
+        "globals.h": "c",
+        "stdio.h": "c"
+    }
+}
