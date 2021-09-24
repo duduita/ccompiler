@@ -1,4 +1,4 @@
-# Laboratórios de CTC-17 (Compiladores)
+# Laboratórios de CES-41 (Compiladores)
 Este repositório servirá como um compilado de todos os laboratórios feitos ao longo do curso.
 ### Laboratório 01 - Lexical Analyser
 1. Install flex using:
